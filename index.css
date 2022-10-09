@@ -1,0 +1,362 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-page
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+}
+.main-page .left
+{
+    background-color: #003147;
+    position: relative;
+    padding: 40px;
+}
+.main-page .right
+{
+    background-color: #ffff;
+    position: relative;
+    padding: 40px;
+}
+.profile-text
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile-text .image-box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    overflow: hidden;
+}
+.image-box img
+{
+    /* height: 24vh;
+    width: 12vw; */
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+.profile-text h2{
+    color: #ffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile-text span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contact-info
+{
+    padding-top: 40px;
+}
+.contact-info-title
+{
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+.contact-info ul
+{
+    list-style-type: none;
+    position: relative;
+}
+.contact-info ul li ,.language .text
+{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 300;
+}
+.contact-info ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contact-info ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.education li
+{
+    margin-bottom: 15px;
+}
+.education h5
+{
+    font-weight: 500;
+    color: #03a9f4;
+}
+
+.education h4:nth-child(2)
+{
+    font-weight: 500;
+    color: #fff;
+}
+.education h4
+{
+    font-weight: 300;
+    color: #fff;
+}
+.education{
+    padding-top: 40px;
+}
+.education-title,.langugae-title
+{
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.percent
+{
+    position: relative;
+    width: 100%;
+    height:6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    border-radius:20px ;
+}
+.language
+{
+    padding-top: 20px;
+}
+.percent div
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #03a9f4;
+    height: 100%;
+    border-radius: 20px;    
+}
+#Eng
+{
+    animation-name: language-percent-1;
+    animation-duration: 2s;
+}
+#hindi
+{
+    animation-name: language-percent-2;
+    animation-duration: 2s;
+
+}
+@keyframes language-percent-1 {
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 75%;
+    }
+}
+@keyframes language-percent-2 {
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 90%;
+    }
+}
+.language ul li
+{
+    margin-bottom: 1vh;
+}
+.personal-summary,.tech-skills,.projects,.experience,.all-skills
+{
+    margin-bottom: 40px;
+}
+.personal-summary-title,.experience-title,.projects-title,.tech-skills-title,.all-skills-title,.interest-title
+{
+    letter-spacing: 1px;
+    color: #003147;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.personal-summary p,.all-skills p
+{
+    color: #333;
+}
+.experience .box,.projects .box
+{    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.experience .box{
+    margin: 0;
+}
+.experience .box .year-company ,.project-duration
+{
+    min-width: 200px;
+}
+.experience .box .year-company h5,.project-duration h5,.project-duration h5 a,.tech-box h2
+{
+    margin-top: 1px;
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.project-duration h5 a
+{
+    color: blue;
+}
+.profile-role h4,.project-name h4
+{
+    
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 16px;
+    
+}
+.profile-role ul,.project-name ul
+{
+    margin-left: 23px;
+    margin-top: 2px;
+}
+.tech-box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.tech-box:last-of-type
+{
+    /* border: 2px solid gold; */
+    margin-bottom: 0px;
+}
+/* .tech */
+.tech-box h2{
+    min-width: 250px;
+    font-size: 1.4em;
+}
+#html-css
+{
+    animation-name: html-css-anim;
+    animation-duration: 2s;
+}
+#Js-dom
+{
+    animation-name: js-anim;
+    animation-duration: 2s;
+}
+#dsa
+{
+    animation-name: dsa-anim;
+    animation-duration: 2s;
+}
+@keyframes html-css-anim {
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes js-anim {
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes dsa-anim {
+    from{
+        width: 0;
+    }
+    to{
+        width: 45%;
+    }
+}
+.interests ul li
+{
+    list-style-type: none;
+    margin: 10px 30px;
+    color: #333;
+    font-weight: 500;
+}
+.interests ul li:first-of-type
+{
+    margin:10px 0px;
+    margin-right: 25px;
+}
+.interests ul
+{
+    display: flex;
+    flex-direction: row;
+}
+.interests ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    margin: 0 5px;
+}
+@media (max-width:1000px) {
+    .main-page
+    {
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+@media (max-width:600px) {
+    .experience .box,.projects .box,.tech-box
+    {
+        flex-direction:column ;
+    }
+    .year-company,.project-duration
+    {
+        margin-bottom: 5px;
+    }
+    .project-name
+    {
+        margin-bottom: 10px;
+    }
+}
