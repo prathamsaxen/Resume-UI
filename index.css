@@ -113,6 +113,20 @@ body
     color: #fff;
     font-weight: 300;
 }
+/* .copied-mobile-dialoge
+{
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 1px;
+    position: absolute;
+    bottom: 25px;
+    background-color: #fff;
+    color: #081921;
+    opacity: 0.6;
+    left: 25px; 
+    width: 140px;
+    visibility: visible;
+} */
 .education li
 {
     margin-bottom: 15px;
